@@ -4,7 +4,7 @@ Define the connection function to connect the neurons ...
     connectionMatrix[from_neuron][to_neuron] = weight 
 '''
 connectionMatrix = np.zeros([nNeurons, nNeurons])
-adaptableMatrix  = np.ones([nNeurons, nNeurons])
+adaptableMatrix  = np.zeros([nNeurons, nNeurons])
 def connect(fromObject, toObject, typeofConnection='N2N', adaptivity=True, weight=1): 
   '''
   Purpose: Update connectionMatrix
